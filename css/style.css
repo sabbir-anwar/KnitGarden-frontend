@@ -69,9 +69,6 @@ blockquote { padding: 10px 20px; margin: 0px; font-size: 21px; line-height: 32px
 
 /*-------------- align ------------*/
 
-/* =WordPress Core
--------------------------------------------------------------- */
-
 .alignnone { margin: 5px 20px 20px 0; }
 .aligncenter, div.aligncenter { display: block; margin: 5px auto 5px auto; }
 .alignright { float: right; margin: 0px 0 30px 30px;  }
@@ -170,8 +167,8 @@ label { }
    ----------------------*/
 
 .header-logo { padding-top: 10px;padding-bottom: 10px;}
-.header-logo .logo-icon i{font-size: 20px;}
-.header-logo img{max-height:110px; }
+.header-logo .logo-icon i{font-size: 20px;line-height: 100px;padding-right: 10px;}
+.header-logo img{max-height:100px; }
 .header { background-color: #fff; z-index: 9999; position: relative;}
 .top-text { text-align: right; }
 .top-text .text-block { padding-left: 20px; color: #fff; line-height: 18px; }
