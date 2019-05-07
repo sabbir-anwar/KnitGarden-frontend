@@ -16,8 +16,9 @@ Author:             Sabbir Anwar & Rifat Sahariar
 2.  Form Elements
 3.  Buttons
 4.  General / Elements
-        4.1 Padding space
-        4.2 Background color
+        4.1 Section space
+        4.2 Padding space
+        4.3 Background color
         -----------------------
 5. Header / Navigations
         5.1 Header Regular
@@ -51,7 +52,7 @@ p:last-child { margin-bottom: 0px; }
 ul, ol { margin: 0; }
 ul li, ol li { }
 a { color: #0e4a21; text-decoration: none; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; transition: all 0.3s; }
-a:focus, a:hover { text-decoration: none; color: #8e7424; }
+a:focus, a:hover { text-decoration: none; color: #000; }
  
 b, strong {
     font-weight: 400;
@@ -70,7 +71,7 @@ blockquote { padding: 10px 20px; margin: 0px; font-size: 21px; line-height: 32px
 /*-------------- align ------------*/
 
 .alignnone { margin: 5px 20px 20px 0; }
-.aligncenter, div.aligncenter { display: block; margin: 5px auto 5px auto; }
+.aligncenter, div.aligncenter { display: block; margin: 15px auto 15px auto;text-align: center; }
 .alignright { float: right; margin: 0px 0 30px 30px;  }
 .floatright{float: right;}
 .floatleft{float: left;}
@@ -114,14 +115,14 @@ label { }
     letter-spacing: 1px; line-height: 1.42857143; text-align: center; border: none; 
     text-transform: uppercase; border-radius: 100px;font-family: 'Montserrat', sans-serif; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;}
 .btn-default { color: #fff; background-color: #0e4a21; }
-.btn-default:hover { color: #fff; background-color: #8e7424; border-color: #8e7424; }
-.btn-default.focus, .btn-default:focus { color: #fff; background-color: #8e7424; border-color: #8e7424; }
+.btn-default:hover { color: #fff; background-color: #000; border-color: #000; }
+.btn-default.focus, .btn-default:focus { color: #fff; background-color: #000; border-color: #000; }
 .btn-primary { background-color: #2d281a; color: #fff; }
 .btn-primary:hover { background-color: #18150d; color: #fff; }
 .btn-primary.focus, .btn-primary:focus { }
 .btn-white { color: #0e4a21; background-color: #fff; border: 1px solid #fff; }
-.btn-white:hover { background-color: #8e7424; border-color: #8e7424; color: #fff; }
-.btn-white.focus, .btn-white:focus { background-color: #8e7424; border-color: #8e7424; color: #fff; }
+.btn-white:hover { background-color: #000; border-color: #000; color: #fff; }
+.btn-white.focus, .btn-white:focus { background-color: #000; border-color: #000; color: #fff; }
 .btn-link { color: #98989c; text-transform: uppercase; font-size: 12px; font-weight: 700; letter-spacing: 2px; border-bottom: 1px solid #98989c; padding-bottom: 2px; }
 .btn-link:hover { color: #0e4a21; font-weight: 700; text-decoration: none; border-bottom: 1px solid #0e4a21; }
 .btn-lg { font-size: 14px; padding: 20px 30px; }
@@ -131,15 +132,26 @@ label { }
 /*-----------------------------------
     4. General / Elements 
 -----------------------------------*/
+.bold{font-weight: bold;}
 
+/*----------------------- 
+    4.1 Section space :
+-------------------------*/
+
+/*Note: Section space help to create top bottom space;*/
+
+.space-small { padding-top: 40px; padding-bottom: 40px; }
+.space-medium { padding-top: 65px; padding-bottom: 65px; }
+.space-large { padding-top: 80px; padding-bottom: 80px; }
+.space-ex-large { padding-top: 100px; padding-bottom: 100px; }
 
 /*-----------------------
-   4.1 Padding space
+   4.2 Padding space
 -------------------------*/
 .nopadding { padding: 0px; }
 
 /*--------------------------------
-4.2 Background & Block color 
+4.3 Background & Block color 
 ----------------------------------*/
 .bg-light { background-color: #f4f1ec; }
 .bg-primary { background-color: #0e4a21; }
@@ -260,8 +272,22 @@ text-shadow: 10px 0 #fff, -10px 0 #fff;}
     5.4 Header-menu
 ----------------------------------------------*/
 
-.header-menu{background: #fff;box-shadow: 0 0 15px 1px rgba(0,0,0,.07);z-index: 9;border-top: solid 1px #8c95a2;}
+.header-menu{background: #fff;box-shadow: 0 0 15px 1px rgba(0,0,0,.07);z-index: 999;border-top: solid 1px #8c95a2;}
 .menu-logo{margin-top: 5px;}
+
+/*--------------------------------
+6 About Us
+----------------------------------*/
+.about-header{text-align: center;}
+.about-header span{font-weight: bold;color:#0e4a21;}
+.about-us{border-right: 1px solid #000;}
+.about-us a{font-weight: bold;}
+/*--------------------------------
+7 Certificate
+----------------------------------*/
+.certificate{}
+.certificate li{list-style: none;padding: 10px;}
+.certificate li i{margin-right: 10px;color: #e2b52d;}
 
 
 /*==========  Non-Mobile First Method  ==========*/
