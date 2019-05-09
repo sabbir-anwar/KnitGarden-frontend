@@ -41,12 +41,6 @@ body { font-size: 16px;
     font-weight: 300; }
 h1, h2, h3, h4, h5, h6 { margin: 0; padding: 0; margin-bottom: 10px; color: #18150d; font-weight: 400; 
     font-family: 'Montserrat', sans-serif; text-transform: uppercase; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
-h1 { font-size: 32px; line-height: 42px; }
-h2 { font-size: 24px; line-height: 32px; }
-h3 { font-size: 18px; line-height: 28px; }
-h4 { font-size: 16px; line-height: 24px; margin-bottom: 10px; }
-h5 { font-size: 14px; }
-h6 { font-size: 12px; }
 p { margin: 0 0 20px; }
 p:last-child { margin-bottom: 0px; }
 ul, ol { margin: 0; }
@@ -179,7 +173,8 @@ label { }
    ----------------------*/
 
 .header-logo { padding-top: 10px;padding-bottom: 10px;}
-.header-logo .logo-icon i{font-size: 20px;line-height: 100px;padding-right: 10px;}
+.header-logo .logo-icon i{font-size: 20px;line-height: 100px;padding-right: 10px;float: right;}
+.header-logo .logo-icon i span{padding-left: 5px;}
 .header-logo img{max-height:100px; }
 .header { background-color: #fff; z-index: 9999; position: relative;}
 .top-text { text-align: right; }
@@ -266,7 +261,7 @@ text-shadow: 10px 0 #fff, -10px 0 #fff;}
 
 .header-top{padding-top: 5px;padding-bottom: 5px;background: #164c27;}
 .header-top span{color:#fff;font-size: 14px;font-weight: 500;}
-.icon-top a{color: #fff;padding-right: 15px;}
+.icon-top a{color: #fff;padding-right: 15px;float: right;}
 
 /*----------------------------------------------
     5.4 Header-menu
@@ -280,7 +275,7 @@ text-shadow: 10px 0 #fff, -10px 0 #fff;}
 ----------------------------------*/
 .about-header{text-align: center;}
 .about-header span{font-weight: bold;color:#0e4a21;}
-.about-us{border-right: 1px solid #000;}
+.about-us{}
 .about-us a{font-weight: bold;}
 /*--------------------------------
 7 Certificate
@@ -289,6 +284,72 @@ text-shadow: 10px 0 #fff, -10px 0 #fff;}
 .certificate li{list-style: none;padding: 10px;}
 .certificate li i{margin-right: 10px;color: #e2b52d;}
 
+/*--------------------------------
+7 Parallex
+----------------------------------*/
+.parallex-fact{
+  /* The image used */
+  background-image: url("../images/slider-10.jpg");
+  /* Set a specific height */
+  min-height: 470px; 
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*--------------------------------
+7 counter
+----------------------------------*/
+.counter
+{
+    background-color: #eaecf0;
+    text-align: center;
+    padding: 25px 0;
+}
+.counter h1{
+    background: rgba(0,0,0,0.29);
+    line-height: 37px;
+    padding: 14px 0 15px;
+    margin-bottom: 71px;
+    color: #fff;
+}
+.employees,.customer,.design,.order
+{
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+.counter-count
+{
+    background-color: rgba(22, 76, 39, 0.85);
+    border-radius: 50%;
+    position: relative;
+    color: #ffffff;
+    text-align: center;
+    line-height: 92px;
+    width: 92px;
+    height: 92px;
+    font-weight: bold;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: inline-block;
+}
+
+.counter-p{
+    font-size: 24px;
+    color: #fff;
+    line-height: 34px;
+    font-weight: bold;
+}
+
+/*--------------------------------
+9 polaroid Image
+----------------------------------*/
+.polaroid img{
+box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.43);
+}
 
 /*==========  Non-Mobile First Method  ==========*/
 
