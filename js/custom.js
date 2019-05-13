@@ -1,9 +1,3 @@
-// Menu Dropdown
-$('ul.nav li.dropdown').hover(function() {
-  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
-}, function() {
-  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
-});
 // Sticky Header
 $(document).ready(function(){
   "use strict";
@@ -27,8 +21,9 @@ $(window).load(function() {
   $('#slider').flexslider({
     animation: "slide",
     controlNav: false,
-    animationLoop: false,
+    animationLoop: true,
     slideshow: true,
+    slideshowSpeed: 3500,
     sync: "#carousel"
   });
 });
