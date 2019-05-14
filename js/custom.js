@@ -5,6 +5,7 @@ $(document).ready(function(){
   $(".header-menu").sticky({topSpacing:0}); 
   }
 });
+
 // flexslider
 $(window).load(function() {
   // The slider being synced must be initialized first
@@ -26,6 +27,19 @@ $(window).load(function() {
     slideshowSpeed: 3500,
     sync: "#carousel"
   });
+
+  $('.flexslider').flexslider({
+    animation: "slide",
+    animationLoop: true,
+    itemWidth: 210,
+    itemMargin: 5,
+    minItems: 3,
+    maxItems: 5,
+    controlNav: false,
+    slideshowSpeed: 2000,
+    directionNav: false,
+    move: 1
+  });
 });
 
 // Counter 
@@ -33,7 +47,7 @@ $('.counter-count').each(function () {
   $(this).prop('Counter',0).animate({
       Counter: $(this).text()
   }, {
-      duration: 5000,
+      duration: 10000,
       easing: 'swing',
       step: function (now) {
           $(this).text(Math.ceil(now));
