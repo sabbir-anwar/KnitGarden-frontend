@@ -1,13 +1,9 @@
-// Sticky Header
-$(document).ready(function(){
-  "use strict";
+// flexslider
+$(window).load(function() {
+    "use strict";
  if( $( window ).width() >= "768" ) {
   $(".header-menu").sticky({topSpacing:0}); 
   }
-});
-
-// flexslider
-$(window).load(function() {
   // The slider being synced must be initialized first
   $('#carousel').flexslider({
     animation: "slide",
@@ -40,8 +36,13 @@ $(window).load(function() {
     directionNav: false,
     move: 1
   });
-});
 
+  
+});
+var window_width = $(window).width();   
+      if(window_width > 767){
+      new WOW().init();
+  }
 // Counter 
 $('.counter-count').each(function () {
   $(this).prop('Counter',0).animate({
@@ -55,7 +56,6 @@ $('.counter-count').each(function () {
   });
 });
 // Timeline
-jQuery(document).ready(function($){
   var timelines = $('.cd-horizontal-timeline'),
     eventsMinDistance = 60;
 
@@ -331,4 +331,3 @@ jQuery(document).ready(function($){
     //check if mobile or desktop device
     return window.getComputedStyle(document.querySelector('.cd-horizontal-timeline'), '::before').getPropertyValue('content').replace(/'/g, "").replace(/"/g, "");
   }
-});
